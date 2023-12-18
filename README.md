@@ -1,3 +1,32 @@
+## Radiomic Cardiac MR Imaging Signatures of Ventricular Arrhythmia in Non-Ischemic Cardiomyopathy
+
+
+## Description of Code
+
+This python/R code implements our logistic regression models for the prediction of ventricular arrhythmia.
+First, radiomic features should be extracted using compute_radiomic_features.py in myradiomics. This requires the installation of pyradiomics library.
+The data should be in .mat format with:
+-First matrix reprensts the image
+-Second matrix represents the mask
+-The pixel spacing should be stored in px_size variable.
+
+The code will read the images and masks and return the computed radiomic features. The code will loop over all images and return all radiomic features per image. Then, the radiomic features are summarized using the mean value
+
+The next step is to run Data_Analysis.py to check the correlation between the features and keep only the non-correlated ones. 
+
+Run Clustering.R to determine the number of clusters. The code runs consensus clustering to determine the optimal number of clusters. An alternative implementation in python is provided under Consensus_clustering_python folder.
+
+Once the number of clsuters is determined, run Hierarchical_clustering.py to create the clusters.
+
+Run then Calculate_medoid to determine a single representative feature per cluster.
+
+Finally, run Logisticregression.py to create logistic regression models.
+
+![Central illustration](https://github.com/HMS-CardiacMR/NICM_ICD_Radiomics/assets/9512423/b500a438-fbe0-41aa-9ea3-fc44acb49216)
+
+
+## Abstract
+
 Background: Risk stratification in patients with non-ischemic cardiomyopathy (NICM) remains challenging. Although late gadolinium enhancement (LGE) CMR is recognized as a major risk factor for VT/VF, the prognostic value of LGE radiomics is unknown.
 Objective: To investigate the incremental value of LGE radiomics in improving VT/VF risk assessment in NICM receiving ICD for primary prevention.
 
