@@ -2,6 +2,7 @@ import numpy as np
 from itertools import combinations
 import bisect
 
+
 np.random.seed(1964)
 class ConsensusCluster:
     """

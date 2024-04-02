@@ -1,7 +1,6 @@
 import SimpleITK as sitk
 import radiomics
 from radiomics import featureextractor
-
 import numpy as np
 import pandas as pd
 

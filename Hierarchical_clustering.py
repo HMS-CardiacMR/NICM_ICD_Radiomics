@@ -8,7 +8,6 @@ import matplotlib.pyplot as plt
 
 sequence = ""
 
-
 path = ""
 data = pd.read_csv(".csv")
 idx = np.nonzero(np.all(np.asarray(data) == 0, axis=0))[

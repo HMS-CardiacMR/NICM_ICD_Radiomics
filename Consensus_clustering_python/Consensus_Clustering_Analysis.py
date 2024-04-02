@@ -47,6 +47,7 @@ def perform_clustering(path):
 
 list_of_groups = os.listdir("Data_processed/")
 
+
 for group in tqdm(list_of_groups):
     list_of_sequences = os.listdir("Data_processed/"+group)
     for sequence in list_of_sequences:
