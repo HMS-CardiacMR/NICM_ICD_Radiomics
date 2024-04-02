@@ -9,3 +9,4 @@ Results: VT/VF occurred in 40 CCF and 24 BIDMC patients over a follow-up period 
 
 Consensus clustering revealed 3 distinct radiomic groups. Model 2 showed significantly higher AUC than Model 1 (0.71 vs 0.61; p=0.045 in CCF and 0.71 vs 0.60; p=0.018 in BIDMC). 
 Conclusions: Radiomic analysis of LGE images provides additional prognostic value beyond LGE burden in predicting arrhythmia in primary prevention NICM. 
+

@@ -5,7 +5,6 @@ library(ConsensusClusterPlus)
 d <- read.csv(".csv", header=TRUE)
 head(d)
 
-
 mads=apply(d,1,mad)
 d=d[rev(order(mads))]
 d = sweep(d,1, apply(d,1,median,na.rm=T))

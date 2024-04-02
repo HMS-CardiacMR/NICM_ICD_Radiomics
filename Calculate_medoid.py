@@ -19,7 +19,6 @@ sns.heatmap(corr)
 plt.show()
 
 
-
 correlations = {}
 columns = cluster1.columns.tolist()
 
