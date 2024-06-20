@@ -22,20 +22,20 @@ Run then Calculate_medoid to determine a single representative feature per clust
 
 Finally, run Logisticregression.py to create logistic regression models.
 
-![Central illustration](https://github.com/HMS-CardiacMR/NICM_ICD_Radiomics/assets/9512423/b500a438-fbe0-41aa-9ea3-fc44acb49216)
+
+![Upload_to_github](https://github.com/HMS-CardiacMR/NICM_ICD_Radiomics/assets/9512423/f543f2ec-09ad-4943-8849-0db9482b986a)
 
 
 ## Abstract
 
-Background: Risk stratification in patients with non-ischemic cardiomyopathy (NICM) remains challenging. Although late gadolinium enhancement (LGE) CMR is recognized as a major risk factor for VT/VF, the prognostic value of LGE radiomics is unknown.
-Objective: To investigate the incremental value of LGE radiomics in improving VT/VF risk assessment in NICM receiving ICD for primary prevention.
+Background: Risk stratification in patients with non-ischemic cardiomyopathy (NICM) remains challenging. Although late gadolinium enhancement (LGE) cardiovascular magnetic resonance (CMR) is recognized as a major risk factor for ventricular tachycardia/ventricular fibrillation (VT/VF), the prognostic value of LGE radiomics is unknown.
+
+Objective: To investigate the incremental value of LGE radiomics in improving VT/VF risk assessment in NICM receiving implantable cardioverter defibrillator (ICD) for primary prevention.
+
+Methods: The study included 270 NICM patients (61% male, 58±13 years) from the Cleveland Clinic Foundation for model development and 113 NICM patients (71% male, 55±14 years) from Beth Israel Deaconess Medical Center for external validation. CMR was performed before ICD implantation for primary prevention. Left ventricular myocardial radiomic features were extracted from LGE images. The primary outcome was appropriate ICD intervention defined as shock or anti-tachycardia pacing for VT/VF. Consensus clustering and pairwise correlation were used to identify the radiomic signature. To assess the prognostic value of LGE radiomics, we built 2 logistic regression models using the development data: (i) Model 1, including clinical risk factors and scar presence, and (ii) Model 2, which combines Model 1 and LGE radiomics. 
 
 
-Methods: The study cohorts consist of 270 NICM patients (61% male, 58±13 years) from Cleveland Clinic (CCF) for model development and 151 NICM patients (74% male, 53±14 years) from Beth Israel Deaconess Medical Center (BIDMC) for external validation. CMR was performed before ICD implantation for primary prevention. Imaging protocol included cine and LGE. The primary outcome was appropriate ICD intervention defined as shock or anti-tachycardia pacing for VT/VF. From LGE images, we extracted 1005 textural radiomic features from the myocardium (Fig 1). We applied consensus clustering to identify distinct radiomic groups. We then identified a single representative feature per group by calculating the pairwise correlation between the features. To assess the prognostic value of LGE radiomics, we built 2 logistic regression models using CCF data (i) Model 1, including clinical risk factors and scar burden (Fig 1) and (ii) Model 2, which combines Model 1 and LGE radiomics. C-statistics (or AUC) was used to evaluate the prognostic value of the different models. DeLong test was used to compare AUCs.
+Results: VT/VF occurred in 40 (15%) patients in development and 16 (15%) in external validation cohorts over a mean follow-up period of 4.4 and 2.9 years, respectively. Consensus clustering and pairwise correlation revealed three distinct radiomic features. Model 2 showed a higher C-statistic than Model 1 (0.71 [CI: 0.62-0.80] vs. 0.61 [CI: 0.53-0.71]; p=0.028 in development and 0.70 [CI: 0.59-0.85] vs. 0.61 [CI: 0.46-0.77]; p=0.025 in external validation). This also significantly improved risk stratification with a continuous net reclassification index of 0.60 [CI: 0.29-0.91; p<0.001] in development and of 0.29 [CI: 0.26-0.56; p=0.03] in external validation. Additionally, one radiomic feature, namely the gray level co-occurrence matrix autocorrelation, was an independent predictor of VT/VF in both development (HR = 1.45 [95%CI: 1.10-1.91]; p=0.01) and in external validation (HR = 2.38 [95%CI: 1.28-4.42]; p=0.01).
 
-
-Results: VT/VF occurred in 40 CCF and 24 BIDMC patients over a follow-up period of 1677±1012 and 1176±960 days, respectively. 
-
-Consensus clustering revealed 3 distinct radiomic groups. Model 2 showed significantly higher AUC than Model 1 (0.71 vs 0.61; p=0.045 in CCF and 0.71 vs 0.60; p=0.018 in BIDMC). 
-Conclusions: Radiomic analysis of LGE images provides additional prognostic value beyond LGE burden in predicting arrhythmia in primary prevention NICM. 
+Conclusions: Radiomic analysis of LGE images provides additional prognostic value beyond LGE presence in predicting arrhythmia in NICM patients with primary prevention ICD. 
 
